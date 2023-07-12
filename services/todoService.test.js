@@ -14,8 +14,8 @@ describe("To do Service Tests", () => {
     const result = await todoServiceById(3);
     console.log("result", result.data);
 
-    expect(result.data[0].userId).toEqual(1);
-    expect(result.data[0].title).toEqual("fugiat veniam minus");
-    expect(result.data[0].completed).toEqual(false);
+    expect(result.data.userId).toEqual(1);
+    expect(result.data.title).toEqual("fugiat veniam minus");
+    expect(result.data.completed).toEqual(false);
   });
 });
