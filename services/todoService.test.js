@@ -19,6 +19,6 @@ describe("To do Service Tests", () => {
     expect(result.data.fact).toEqual(
       "The technical term for a cat’s hairball is a “bezoar."
     );
-    expect(result.data.length).toEqual("54");
+    expect(result.data.length).toEqual(54);
   });
 });

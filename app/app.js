@@ -9,7 +9,6 @@ app.get("/", (req, res, next) => {
 });
 //router middleware
 app.use("/cats", router);
-//console.log("");
 
 // add middleware to handle error and bad url paths
 app.use((req, res, next) => {
