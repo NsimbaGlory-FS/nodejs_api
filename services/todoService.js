@@ -11,4 +11,7 @@ const todoServiceById = async (id) => {
   return await axios.get(`${process.env.todosURL}${id}`);
 };
 
-module.exports = { todoService, todoServiceById };
+module.exports = {
+  todoService,
+  todoServiceById,
+};

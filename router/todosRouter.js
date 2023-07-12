@@ -1,7 +1,7 @@
 const { toFormData } = require("axios");
 const express = require("express");
 const todosRouter = express.Router();
-const { todoService, todoServiceById } = require("../services/todoServices");
+const { todoService, todoServiceById } = require("../services/todoService");
 
 todosRouter.get("/", (req, res, next) => {
   todoService()
