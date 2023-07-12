@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1689169333888" clover="3.2.0">
-  <project timestamp="1689169333888" name="All files">
+<coverage generated="1689169568711" clover="3.2.0">
+  <project timestamp="1689169568711" name="All files">
     <metrics statements="9" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1" elements="11" coveredelements="8" complexity="0" loc="9" ncloc="9" packages="1" files="1" classes="1"/>
     <file name="todoService.js" path="/Users/glorynsimba/nodejs_api/services/todoService.js">
       <metrics statements="9" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
