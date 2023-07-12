@@ -1,6 +1,6 @@
 const express = require("express");
 const { status } = require("express/lib/response");
-const todosRouter = require("../router/todosRouter");
+const router = require("../router/todosRouter");
 
 const app = express();
 // http://locahost:3000
@@ -8,7 +8,7 @@ app.get("/", (req, res, next) => {
   res.status(200).json({ message: "Service is up" });
 });
 //router middleware
-app.use("id", router);
+app.use("/cats", router);
 //console.log("");
 
 // add middleware to handle error and bad url paths

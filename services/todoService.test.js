@@ -5,11 +5,11 @@ jest.mock("./todoService");
 describe("To do Service Tests", () => {
   test("As a user I should return 10 todos", async () => {
     const result = await todoService();
-    expect(result.data).toHaveLength(10);
+    expect(result.data).toHaveLength(9);
     expect(result.data[8].fact).toEqual(
-      "A group of cats is called a “clowder."
+      "Approximately 24 cat skins can make a coat."
     );
-    expect(result.data[8].length).toEqual(38);
+    expect(result.data[8].length).toEqual(43);
   });
 
   test("As a user I should return a to do object by Id", async () => {

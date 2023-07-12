@@ -4,12 +4,14 @@ const todosRouter = express.Router();
 const { todoService, todoServiceById } = require("../services/todoService");
 
 todosRouter.get("/", (req, res, next) => {
+  console.log("this my test");
+
   todoService()
     .then((result) => {
       res.status(200).json(result.data);
     })
 
-    .catch((err) => {
+    .catch((error) => {
       res.status(500).json({
         error: {
           message: error.message,
@@ -19,7 +21,9 @@ todosRouter.get("/", (req, res, next) => {
 });
 
 todosRouter.get("/:id", (req, res, next) => {
-  todoServiceById(req, params.id)
+  console.log(req.params.id);
+
+  todoServiceById(req.params.id)
     .then((result) => {
       res.status(200).json(result.data);
     })
