@@ -8,8 +8,8 @@ app.get("/", (req, res, next) => {
   res.status(200).json({ message: "Service is up" });
 });
 //router middleware
-app.use("/image/random", todosRouter);
-console.log("");
+app.use("id", router);
+//console.log("");
 
 // add middleware to handle error and bad url paths
 app.use((req, res, next) => {
