@@ -16,7 +16,7 @@ describe("To do Service Tests", () => {
     const result = await todoServiceById(3);
     console.log("result", result.data);
 
-    expect(result.data.fact).toEqual(
+    expect(result.data[8].fact).toEqual(
       "The technical term for a cat’s hairball is a “bezoar."
     );
     expect(result.data.length).toEqual(54);
