@@ -1,6 +1,6 @@
 const { todoService, todoServiceById } = require("./todoService");
 
-jest.mock("./todoService");
+jest.mock("./todoService.js");
 
 describe("To do Service Tests", () => {
   test("As a user I should return 10 todos", async () => {
